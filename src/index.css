@@ -1,0 +1,153 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin-top: 10vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.selectComponent{
+  width: 40vw;
+  min-width: 300px;
+}
+
+.selectedOptionContainer{
+  display: flex;
+  align-items: stretch;
+  background-color: #484444;
+}
+
+.selectedOption{
+  padding: 5px 10px;
+  min-height: 1.75rem;
+  flex: 1;
+  background-color: #484444;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+.dropdownBtn{
+  float: right;
+  padding: .10rem 1rem;
+  background-color: #484444;
+  border: none;
+  border-radius: 0;
+  max-height: 50px;
+
+}
+button:hover {
+  background-color:  rgb(29, 28, 28);
+}
+
+.dropdownBtn:focus,
+.dropdownBtn:focus-visible {
+  outline: 0;
+}
+
+
+.optionContainer{
+  width: 100%;
+  height: 30vh;
+  overflow-y: scroll;
+  border-radius: 0 0 .25em .25em;
+  padding: 0 !important;
+
+}
+
+
+.selectOption{
+  margin-bottom: .1em;
+  color: red;
+  background-color: rgb(29, 28, 28);
+  /* border: 2px solid white; */
+  width: 100%;
+  padding: .5rem 0;
+  text-align: center;
+  font-size: .75rem;
+}
+.selectOption:hover{
+  background-color: rgb(41, 40, 40);
+}
+
+.selectOptionChoices {
+  display: flex;
+  align-items: center;
+  border: 2px solid darkRed;
+  border-radius: 0.5em;
+  padding-left: 4px;
+  gap: 3px;
+  font-size: 0.75rem;
+  margin: 0;
+  background-color: rgba(174, 22, 22, 0.366);
+}
+
+.selectOptionChoices button {
+  font-size: 0.5rem;
+  border-radius: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
